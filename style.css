@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #053247;
+}
+
+.app{
+    width: 50vw;
+    height: 22vh;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    border-radius: 16px;
+}
+
+h2{
+    margin-left: 2rem;
+}
+
+.data{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+.text{
+    background-color: rgb(169, 168, 168);
+    width: 20vw;
+    height: 6vh;
+    border: none;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.btn{
+    height: inherit;
+    width: 100px;
+    border: none;
+    background-color: #ff5945;
+    border-radius: 1.2rem;
+    transition: .6s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    border-radius: 2rem;
+    background-color: #fe7a6b;
+}
+li{
+    list-style: none;
+    font-size: 18px;
+    padding: 10px 5rem;
+    position: relative;
+}
+li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 40px;
+    top: 6px;
+    background-image: url("unchecked.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url("checked.png");
+}
+
+.del_span{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+    transition: .5s;
+}
+
+.del_span:hover{
+    background-color: rgb(213, 213, 213);
+}
+.top{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.none{
+    display: none;
+}
+.show{
+    background-color: #fff;
+    height: fit-content;
+    width: 50vw;
+    box-shadow: 0px 0px 7px #fff;
+    border-radius: 2rem;
+}
+.list-container{
+    display: none;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.show-h2{
+    text-align: center;
+    margin: 2rem 0;
+}
